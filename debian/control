@@ -1,0 +1,12 @@
+Source: ros-hydro-laser-pipeline
+Section: misc
+Priority: extra
+Maintainer: "David Gossow <dgossow@willowgarage.com>"
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://www.ros.org/wiki/laser_pipeline
+Standards-Version: 3.9.2
+
+Package: ros-hydro-laser-pipeline
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-laser-assembler, ros-hydro-laser-filters, ros-hydro-laser-geometry
+Description: Meta-package of libraries for processing laser data, including converting laser data into 3D representations.
